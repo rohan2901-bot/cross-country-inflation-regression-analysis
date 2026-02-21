@@ -60,9 +60,9 @@ Model performance was assessed using:
 ## Results
 
 
-**Model**	 Linear Regression	≈ **R²** -0.07	≈ **MSE (log scale)**    0.51
-**Model**  Ridge Regression	  ≈ **R²** -0.07	≈ **MSE (log scale)**    0.51
-**Model**  Lasso Regression 	≈ **R²** -0.02	≈ **MSE (log scale)**    0.48
+1. **Model**	 Linear Regression	≈ **R²** -0.07	≈ **MSE (log scale)**    0.51
+2. **Model**  Ridge Regression	  ≈ **R²** -0.07	≈ **MSE (log scale)**    0.51
+3. **Model**  Lasso Regression 	≈ **R²** -0.02	≈ **MSE (log scale)**    0.48
 
 All models exhibit near-zero or slightly negative R² values, indicating that they perform no better (and in some cases worse) than predicting the mean inflation rate. Regularization does not materially improve explanatory power, suggesting that multicollinearity is not the core limitation.
 
