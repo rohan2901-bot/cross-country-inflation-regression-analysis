@@ -9,9 +9,9 @@ The objective is not to maximize predictive performance using complex models, bu
 The dataset consists of:
 
 -194 countries
--GDP (USD Trillions)
--Unemployment Rate (%)
--Inflation Rate (%)
+,GDP (USD Trillions)
+,Unemployment Rate (%)
+,Inflation Rate (%)
 
 
 **Preliminary Observations**
@@ -24,7 +24,7 @@ Descriptive statistics and exploratory analysis revealed:
 
 **Correlation estimates:**
 >Inflation vs. Unemployment: ≈ 0.13 (weak positive)
->Inflation vs. GDP: ≈ 0.00 (negligible relationship)
+; Inflation vs. GDP: ≈ 0.00 (negligible relationship)
 
 
 ## Methodology
@@ -45,8 +45,8 @@ Given the skewness of inflation, a log transformation was applied whcih reduced 
 Three regression models were evaluated:
 
 >Linear Regression (OLS)
->Ridge Regression (L2 regularization)
->Lasso Regression (L1 regularization)
+> ; Ridge Regression (L2 regularization)
+> ; Lasso Regression (L1 regularization)
 >
 Features were standardized prior to modeling.
 
@@ -54,15 +54,15 @@ Features were standardized prior to modeling.
 Model performance was assessed using:
 
 >R² (coefficient of determination)
->Mean Squared Error (MSE)
+> ; Mean Squared Error (MSE)
 
 
 ## Results
 
-  **Model**	          **R²**   **MSE (log scale)**
-Linear Regression	≈ -0.07	≈     0.51
-Ridge Regression	≈ -0.07	≈     0.51
-Lasso Regression	≈ -0.02	≈     0.48
+
+**Model**	 Linear Regression	≈ **R²** -0.07	≈ **MSE (log scale)**    0.51
+**Model**  Ridge Regression	  ≈ **R²** -0.07	≈ **MSE (log scale)**    0.51
+**Model**  Lasso Regression 	≈ **R²** -0.02	≈ **MSE (log scale)**    0.48
 
 All models exhibit near-zero or slightly negative R² values, indicating that they perform no better (and in some cases worse) than predicting the mean inflation rate. Regularization does not materially improve explanatory power, suggesting that multicollinearity is not the core limitation.
 
@@ -72,20 +72,20 @@ All models exhibit near-zero or slightly negative R² values, indicating that th
 The weak model performance indicates that GDP and unemployment rates alone do not provide sufficient explanatory structure for cross-country inflation prediction. This suggests that inflation dynamics are likely driven by additional macroeconomic and institutional factors, such as:
 
 >Monetary policy regimes
->Fiscal stability
->Exchange rate dynamics
->Political and institutional conditions
->External shocks
+> ; Fiscal stability
+> ; Exchange rate dynamics
+> ; Political and institutional conditions
+> ; External shocks
 
 The results reinforce the importance of economic structure and institutional context when modeling macroeconomic outcomes.
 
 
 ## Key Takeaways
 
->Model complexity cannot compensate for weak explanatory variables.
->Regularization does not improve performance when predictive signal is structurally limited.
->Cross-sectional macroeconomic modeling requires careful variable selection.
->Inflation is not adequately captured by GDP and unemployment alone.
+1. Model complexity cannot compensate for weak explanatory variables.
+2. Regularization does not improve performance when predictive signal is structurally limited.
+3. Cross-sectional macroeconomic modeling requires careful variable selection.
+4. Inflation is not adequately captured by GDP and unemployment alone.
 
 
 ## Technical Stack
