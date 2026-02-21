@@ -1,6 +1,6 @@
 ## Introduction
 
-This project investigates whether cross-sectional macroeconomic variables—specifically GDP (USD Trillions) and Unemployment Rate (%)—possess meaningful explanatory power in predicting country-level inflation rates.
+This project investigates whether cross-sectional macroeconomic variables specifically GDP (USD Trillions) and Unemployment Rate (%) possess meaningful explanatory power in predicting country-level inflation rates.
 
 The objective is not to maximize predictive performance using complex models, but rather to evaluate the structural relationship between selected macroeconomic indicators and inflation through standard econometric techniques.
 
